@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Smart Devices - Upgrade Your Home</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #388E3C;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Defines 3 columns of equal width */
+            grid-template-rows: auto auto; /* Allows rows to grow based on content */
+            grid-gap: 20px; /* Adds space between grid items */
+            margin-top: 30px;
+        }
+
+        /* Grid Items */
+        .grid-item {
+            background-color: white;
+            border: 2px solid #4CAF50;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .grid-item h3 {
+            margin-bottom: 15px;
+        }
+
+        .grid-item p {
+            margin-bottom: 20px;
+        }
+
+        .grid-item button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .grid-item button:hover {
+            background-color: #388E3C;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+            border-color: #388E3C;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Switch to a single-column layout on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JK Smart Devices</h1>
+        <p>Upgrade Your Home with the Latest Smart Technology</p>
+    </header>
+
+    <section class="grid-container">
+        <!-- Grid Item 1 -->
+        <div class="grid-item">
+            <h3>Smart Security Camera</h3>
+            <p>Monitor your home 24/7 with real-time alerts and HD video.</p>
+            <button>Shop Now</button>
+        </div>
+
+        <!-- Grid Item 2 -->
+        <div class="grid-item">
+            <h3>Smart Lighting System</h3>
+            <p>Control your lights with your voice or smartphone from anywhere.</p>
+            <button>Shop Now</button>
+        </div>
+
+        <!-- Grid Item 3 -->
+        <div class="grid-item">
+            <h3>Smart Thermostat</h3>
+            <p>Save energy and money by automating your home's temperature.</p>
+            <button>Shop Now</button>
+        </div>
+
+        <!-- Grid Item 4 (Full Width) -->
+        <div class="grid-item" style="grid-column: span 3;">
+            <h3>Complete Smart Home Bundle</h3>
+            <p>Get all our smart devices in one convenient package and upgrade your entire home.</p>
+            <button>Explore Bundle</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JK Smart Devices. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

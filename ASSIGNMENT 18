@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Creative Solutions</title>
+    <style>
+        /* Define CSS Variables for common values */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --background-color: #f4f6f9;
+
+            --font-size-large: 2.5em;
+            --font-size-medium: 1.2em;
+            --font-size-small: 0.9em;
+
+            --spacing-large: 40px;
+            --spacing-medium: 20px;
+            --spacing-small: 10px;
+
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: var(--spacing-large);
+            font-size: var(--font-size-large);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-large) var(--spacing-medium);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: var(--font-size-medium);
+            margin-bottom: var(--spacing-medium);
+        }
+
+        p {
+            color: var(--text-color);
+            font-size: var(--font-size-small);
+            margin-bottom: var(--spacing-small);
+        }
+
+        .button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: var(--spacing-small) var(--spacing-medium);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-medium);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for button */
+        .button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .card {
+            background-color: white;
+            padding: var(--spacing-medium);
+            margin-bottom: var(--spacing-medium);
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: var(--spacing-large);
+            font-size: var(--font-size-small);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        JK Creative Solutions
+    </header>
+
+    <div class="container">
+        <h2>Welcome to JK Creative Solutions</h2>
+        <p>At JK Creative Solutions, we provide top-notch web design and development services to help businesses grow and thrive in the digital world.</p>
+
+        <div class="card">
+            <h2>Our Services</h2>
+            <p>From custom websites to mobile applications, we craft digital solutions that cater to your business needs.</p>
+            <button class="button">Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>Why Choose Us?</h2>
+            <p>We combine creativity, technical expertise, and a client-first approach to deliver the best results for your business.</p>
+            <button class="button">Get Started</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 JK Creative Solutions. All Rights Reserved.
+    </footer>
+</body>
+</html>

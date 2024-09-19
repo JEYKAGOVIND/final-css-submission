@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Media - Your Advertisement Partner</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header style */
+        .header {
+            background-color: #1d1d1d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 100;
+        }
+
+        /* Advertisement banner at the top */
+        .top-ad {
+            background-color: #ffcc00;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 101;
+        }
+
+        /* Main content area styling */
+        .main-content {
+            margin-top: 100px; /* Push content below the top ad */
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Article section styling */
+        .article {
+            flex: 2;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        /* Sidebar advertisements */
+        .sidebar-ad {
+            flex: 1;
+            background-color: #ff6666;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+
+        /* Sidebar ad 2 with higher z-index */
+        .sidebar-ad2 {
+            flex: 1;
+            background-color: #66ccff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            z-index: 3;
+            margin-top: 10px;
+        }
+
+        /* Advertisement in the middle of the content */
+        .content-ad {
+            background-color: #ffcc66;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top advertisement banner -->
+    <div class="top-ad">
+        Special Offer: Advertise with JK Media! Call us today at 123-456-7890.
+    </div>
+
+    <!-- Header section -->
+    <div class="header">
+        <h1>Welcome to JK Media</h1>
+        <p>Your #1 Partner for Targeted Advertising</p>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <!-- Main article/content -->
+        <div class="article">
+            <h2>How Advertising with JK Media Can Grow Your Business</h2>
+            <p>
+                Advertising with JK Media helps you reach a larger, targeted audience, increasing your business visibility.
+                Our solutions include banner ads, social media campaigns, and custom solutions to fit your business needs.
+            </p>
+            
+            <!-- Advertisement block inside the article -->
+            <div class="content-ad">
+                Advertise Here - Reach Millions of Potential Customers!
+            </div>
+
+            <p>
+                Our team of experts is here to assist you with every step of the process, from creating effective ads to maximizing
+                your ROI. Contact us to learn more about how we can drive growth for your business.
+            </p>
+        </div>
+
+        <!-- Sidebar advertisements -->
+        <div class="sidebar-ad">
+            Sidebar Ad 1 - Special Deals!
+        </div>
+
+        <div class="sidebar-ad2">
+            Sidebar Ad 2 - Featured Offers
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>JK Media - © 2024. All Rights Reserved. Contact us at info@jkmedia.com</p>
+    </div>
+
+</body>
+</html>

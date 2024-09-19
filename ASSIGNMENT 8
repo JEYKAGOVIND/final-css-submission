@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Fashion Hub - Latest Fashion Trends</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #FF4081;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #E91E63;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "promo promo promo"
+                "featured products reviews"
+                "footer footer footer";
+            grid-gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Grid Items */
+        .promo {
+            grid-area: promo;
+            background-color: #FF80AB;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .featured {
+            grid-area: featured;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #FF4081;
+        }
+
+        .products {
+            grid-area: products;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #FF4081;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .product-item {
+            background-color: #fce4ec;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .reviews {
+            grid-area: reviews;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #FF4081;
+        }
+
+        /* Footer */
+        footer {
+            grid-area: footer;
+            background-color: #FF4081;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "promo"
+                    "featured"
+                    "products"
+                    "reviews"
+                    "footer";
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JK Fashion Hub</h1>
+        <p>Your Destination for the Latest Fashion Trends</p>
+    </header>
+
+    <section class="grid-container">
+        <!-- Promo Section -->
+        <div class="promo">
+            <h2>50% Off on All Summer Collection!</h2>
+        </div>
+
+        <!-- Featured Section -->
+        <div class="featured">
+            <h3>Featured Outfit</h3>
+            <p>Explore the latest arrivals and must-have fashion essentials this season!</p>
+        </div>
+
+        <!-- Products Section (Nested Grid) -->
+        <div class="products">
+            <div class="product-item">
+                <h4>Summer Dress</h4>
+                <p>Breezy and chic, perfect for warm days.</p>
+            </div>
+            <div class="product-item">
+                <h4>Designer Handbag</h4>
+                <p>Elevate your style with luxury accessories.</p>
+            </div>
+            <div class="product-item">
+                <h4>Sunglasses</h4>
+                <p>Trendy eyewear to complement your summer look.</p>
+            </div>
+            <div class="product-item">
+                <h4>Casual Shoes</h4>
+                <p>Comfort meets fashion with these stylish shoes.</p>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews">
+            <h3>Customer Reviews</h3>
+            <p>"Great quality products and amazing customer service!"</p>
+            <p>"I love shopping here! The discounts are unbeatable."</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 JK Fashion Hub. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+</body>
+</html>

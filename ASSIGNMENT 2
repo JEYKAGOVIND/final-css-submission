@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Design - Color and Background Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4; /* Light gray background for the whole page */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* White background for the container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #008cba; /* Blue color for the main heading */
+            text-align: center;
+        }
+
+        .gradient-background {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background from pink to orange */
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff; /* White text for better contrast */
+            text-align: center;
+        }
+
+        .image-background {
+            background-image: url('https://via.placeholder.com/1200x400'); /* Background image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            color: #fff; /* White text for better contrast */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .repeating-background {
+            background: url('https://via.placeholder.com/150') repeat; /* Repeating background image */
+            padding: 20px;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        .positioned-background {
+            background: url('https://via.placeholder.com/300') no-repeat;
+            background-position: right bottom;
+            padding: 20px;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        .solid-background {
+            background-color: #008cba; /* Solid color background */
+            color: #fff; /* White text */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>JK Design - Color and Background Showcase</h1>
+
+        <div class="gradient-background">
+            <h2>Gradient Background</h2>
+            <p>This section demonstrates a linear gradient background transitioning from pink to orange.</p>
+        </div>
+
+        <div class="image-background">
+            <h2>Background Image</h2>
+            <p>This section showcases a background image that covers the entire area.</p>
+        </div>
+
+        <div class="repeating-background">
+            <h2>Repeating Background</h2>
+            <p>This section uses a repeating background image.</p>
+        </div>
+
+        <div class="positioned-background">
+            <h2>Positioned Background</h2>
+            <p>This section features a background image positioned at the bottom right.</p>
+        </div>
+
+        <div class="solid-background">
+            <h2>Solid Color Background</h2>
+            <p>This section uses a solid color background for a clean look.</p>
+        </div>
+    </div>
+
+</body>
+</html>

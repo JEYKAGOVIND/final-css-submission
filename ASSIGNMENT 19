@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Tech Solutions</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS to override Bootstrap styles -->
+    <style>
+        /* Custom styles to override Bootstrap default styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #2c3e50;
+        }
+
+        .navbar-custom {
+            background-color: #3498db;
+        }
+
+        .navbar-custom .navbar-brand, 
+        .navbar-custom .nav-link {
+            color: #fff;
+        }
+
+        /* Customizing the button */
+        .btn-custom {
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 25px;
+        }
+
+        .btn-custom:hover {
+            background-color: #c0392b;
+            color: #fff;
+        }
+
+        /* Custom card styles */
+        .card-custom {
+            border: 2px solid #3498db;
+            border-radius: 15px;
+        }
+
+        .card-custom .card-title {
+            color: #2980b9;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JK Tech Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Welcome to JK Tech Solutions</h1>
+        <p class="lead">We provide innovative technology solutions for businesses worldwide.</p>
+        <a href="#" class="btn btn-custom">Learn More</a>
+    </div>
+
+    <!-- Services Section (Responsive Cards using Bootstrap Grid) -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">We create modern, responsive websites that help you engage with your audience.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Apps</h5>
+                        <p class="card-text">Our team builds custom mobile applications to meet your business needs.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Solutions</h5>
+                        <p class="card-text">We offer secure cloud computing solutions that scale with your business.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 JK Tech Solutions. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS (Optional, for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

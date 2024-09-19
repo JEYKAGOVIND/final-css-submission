@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Digital Services - Web Solutions for Your Business</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Static Positioning (default) */
+        .section-static {
+            background-color: #FFEB3B;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #FBC02D;
+        }
+
+        /* Relative Positioning */
+        .section-relative {
+            position: relative;
+            background-color: #FF9800;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #E65100;
+        }
+
+        .relative-box {
+            position: relative;
+            left: 30px;
+            top: 20px;
+            padding: 10px;
+            background-color: #F57C00;
+            color: white;
+        }
+
+        /* Absolute Positioning */
+        .section-absolute {
+            position: relative;
+            height: 200px;
+            background-color: #4CAF50;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #388E3C;
+            color: white;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: #388E3C;
+            padding: 15px;
+            border: 2px solid #1B5E20;
+        }
+
+        /* Fixed Positioning */
+        .section-fixed {
+            background-color: #03A9F4;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+            border: 2px solid #0288D1;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #0288D1;
+            padding: 15px;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Sticky Positioning */
+        .section-sticky {
+            height: 300px;
+            background-color: #673AB7;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+            border: 2px solid #512DA8;
+            overflow-y: scroll;
+        }
+
+        .sticky-header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #4527A0;
+            padding: 10px;
+            color: white;
+            border: 1px solid #311B92;
+        }
+
+        .sticky-content {
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #212121;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JK Digital Services - Web Solutions for Your Business</h1>
+
+    <!-- Static Positioning -->
+    <section class="section-static">
+        <h2>Static Positioning (Default)</h2>
+        <p>This section uses static positioning, which is the default. It flows naturally in the document without any special positioning applied.</p>
+    </section>
+
+    <!-- Relative Positioning -->
+    <section class="section-relative">
+        <h2>Relative Positioning</h2>
+        <p>This section is relatively positioned. Inside, there's a box that is moved 30px to the right and 20px down using <code>left</code> and <code>top</code> with <code>position: relative</code>.</p>
+        <div class="relative-box">
+            I am relatively positioned.
+        </div>
+    </section>
+
+    <!-- Absolute Positioning -->
+    <section class="section-absolute">
+        <h2>Absolute Positioning</h2>
+        <p>This section is relatively positioned, but inside it, there's an absolutely positioned box that ignores the normal flow and is placed 50px from the top and 50px from the left.</p>
+        <div class="absolute-box">
+            I am absolutely positioned inside a relative container.
+        </div>
+    </section>
+
+    <!-- Fixed Positioning -->
+    <section class="section-fixed">
+        <h2>Fixed Positioning</h2>
+        <p>This section demonstrates fixed positioning. The box below is always fixed at the bottom-right corner of the page, even when you scroll.</p>
+        <div class="fixed-box">
+            I stay fixed at the bottom right!
+        </div>
+    </section>
+
+    <!-- Sticky Positioning -->
+    <section class="section-sticky">
+        <h2>Sticky Positioning</h2>
+        <div class="sticky-header">
+            I stick to the top when you scroll!
+        </div>
+        <div class="sticky-content">
+            <p>Scroll down to see the sticky effect in action. The header will stick to the top when you reach it while scrolling inside this section.</p>
+            <p>Sticky positioning combines the behavior of relative and fixed positioning. When you scroll, the element stays relative until it reaches a defined point, then it becomes fixed at that point.</p>
+            <p>Keep scrolling to see more content here, and watch how the sticky header works!</p>
+            <p>This section is tall enough to demonstrate the sticky effect, allowing the header to stick to the top once you scroll past a certain point.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 JK Digital Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

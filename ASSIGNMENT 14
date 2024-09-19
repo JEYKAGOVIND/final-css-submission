@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Fitness - Get Fit, Stay Healthy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .promo-box {
+            width: 250px;
+            height: 250px;
+            background-color: #2980b9;
+            color: white;
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        /* Keyframe animation for bounce effect */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .fade-in-box {
+            width: 250px;
+            height: 250px;
+            background-color: #c0392b;
+            color: white;
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 1s forwards;
+        }
+
+        /* Keyframe animation for fade-in effect */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .spin-box {
+            width: 250px;
+            height: 250px;
+            background-color: #f39c12;
+            color: white;
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 50%;
+            text-align: center;
+            animation: spin 5s linear 0.5s infinite;
+        }
+
+        /* Keyframe animation for spinning effect */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #2ecc71;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* Keyframe animation for pulsing effect */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to JK Fitness - Get Fit, Stay Healthy
+    </header>
+
+    <div class="container">
+        <!-- Bouncing box animation -->
+        <div class="promo-box">
+            <h3>Protein Shake</h3>
+            <p>Boost your energy with our new protein shake!</p>
+        </div>
+
+        <!-- Fade-in box animation -->
+        <div class="fade-in-box">
+            <h3>Workout Gear</h3>
+            <p>Exclusive offers on fitness apparel.</p>
+        </div>
+
+        <!-- Spinning box animation -->
+        <div class="spin-box">
+            <h3>Yoga Mat</h3>
+            <p>Durable and comfortable yoga mats.</p>
+        </div>
+
+        <!-- Pulsing call-to-action button -->
+        <a href="#" class="cta-button">Shop Now</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Travel Adventures - Explore the World</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #FF6F00;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            margin-top: 30px;
+        }
+
+        .destination {
+            background-color: white;
+            border: 2px solid #FF6F00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .destination h3 {
+            margin-bottom: 15px;
+        }
+
+        .destination p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Image Styling */
+        .destination img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .destination img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #FF6F00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JK Travel Adventures</h1>
+        <p>Discover Breathtaking Destinations Around the World</p>
+    </header>
+
+    <section class="main-content">
+        <!-- Destination 1 -->
+        <div class="destination">
+            <h3>Bali, Indonesia</h3>
+            <picture>
+                <source srcset="bali-large.jpg 1024w, bali-medium.jpg 768w, bali-small.jpg 480w" 
+                        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
+                <img src="bali-large.jpg" alt="Bali Beach, Indonesia">
+            </picture>
+            <p>Explore the stunning beaches, vibrant culture, and beautiful nature in Bali.</p>
+        </div>
+
+        <!-- Destination 2 -->
+        <div class="destination">
+            <h3>Paris, France</h3>
+            <picture>
+                <source srcset="paris-large.jpg 1024w, paris-medium.jpg 768w, paris-small.jpg 480w" 
+                        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
+                <img src="paris-large.jpg" alt="Eiffel Tower, Paris">
+            </picture>
+            <p>Visit the city of love and explore the iconic Eiffel Tower and rich history.</p>
+        </div>
+
+        <!-- Destination 3 -->
+        <div class="destination">
+            <h3>Santorini, Greece</h3>
+            <picture>
+                <source srcset="santorini-large.jpg 1024w, santorini-medium.jpg 768w, santorini-small.jpg 480w" 
+                        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
+                <img src="santorini-large.jpg" alt="Santorini, Greece">
+            </picture>
+            <p>Enjoy the breathtaking views and sunsets in the beautiful island of Santorini.</p>
+        </div>
+
+        <!-- Destination 4 -->
+        <div class="destination">
+            <h3>Kyoto, Japan</h3>
+            <picture>
+                <source srcset="kyoto-large.jpg 1024w, kyoto-medium.jpg 768w, kyoto-small.jpg 480w" 
+                        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw">
+                <img src="kyoto-large.jpg" alt="Kyoto, Japan">
+            </picture>
+            <p>Step back in time and discover the temples and serene gardens of Kyoto.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JK Travel Adventures. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
